@@ -100,3 +100,13 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# emacs
+*~
+
+# temporary data files
+*.in
+*.out
+
+# intelij idea files
+*.idea
