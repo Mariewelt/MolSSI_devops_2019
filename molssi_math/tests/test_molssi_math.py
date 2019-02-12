@@ -50,3 +50,32 @@ def num_list_3():
 ])
 def test_many(num_list, expected_mean):
     assert molssi_math.mean(num_list) == expected_mean
+
+
+@pytest.mark.parametrize("x", [0, 1])
+@pytest.mark.parametrize("y", [2, 3])
+def test_foo(x, y):
+    pass
+
+
+def test_title_case_type_error():
+    test_sentence = [1, 2, 3, 4]
+    with pytest.raises(TypeError):
+        molssi_math.title_case(test_sentence)
+
+
+def test_title_case_empty_string_error():
+    test_sentence = ''
+    with pytest.raises(ValueError):
+        molssi_math.title_case(test_sentence)
+
+
+@pytest.mark.parametrize("test_sentence, expected", [
+                         ("ThIs iS a STring to be ConverteD.",
+                          "This Is A String To Be Converted."),
+                         ("a", "A"),
+                         ("hEllo WORLD!", "Hello World!")
+                         ])
+def test_title_case(test_sentence, expected):
+    observed = molssi_math.title_case(test_sentence)
+    assert observed == expected
