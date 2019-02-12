@@ -10,8 +10,6 @@ def mean(num_list):
     """
     Computes the mean of a list of numbers
 
-
-
     Parameters
     ----------
     num_list : list
