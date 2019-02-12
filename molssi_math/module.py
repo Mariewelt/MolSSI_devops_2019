@@ -5,8 +5,9 @@ My first project with cookiecutter
 Handles the primary functions
 """
 
+import numpy as np
 
-def mean(num_list):
+def mean(num_list): 
     """
     Computes the mean of a list of numbers
 
