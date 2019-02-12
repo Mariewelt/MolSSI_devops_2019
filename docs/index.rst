@@ -5,10 +5,13 @@
 
 Welcome to molssi-math's documentation!
 =========================================================
+This is a sample documentation.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 2 #3
    :caption: Contents:
+
+   usage/quickstart
 
 
 
