@@ -35,3 +35,18 @@ def test_zero_length():
 
     with pytest.raises(ValueError):
         molssi_math.mean(test_list)
+
+
+@pytest.fixture
+def num_list_3():
+    return [1, 2, 3, 4, 5]
+
+
+@pytest.mark.parametrize("num_list, expected_mean", [
+    ([1, 2, 3, 4, 5], 3),
+    ([0, 2, 4, 6], 3),
+    ([1, 2, 3, 4], 2.5),
+    (list(range(1, 1000000)), 1000000/2)
+])
+def test_many(num_list, expected_mean):
+    assert molssi_math.mean(num_list) == expected_mean
