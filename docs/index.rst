@@ -8,10 +8,12 @@ Welcome to molssi-math's documentation!
 This is a sample documentation.
 
 .. toctree::
-   :maxdepth: 2 #3
+   :maxdepth: 2
    :caption: Contents:
 
    usage/quickstart
+   modules/molssi_math
+   modules/string_util
 
 
 

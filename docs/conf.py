@@ -131,8 +131,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'molssi_math.tex', 'molssi-math Documentation',
-     'molssi_math', 'manual'),
+    (master_doc, 'molssi_math.rst.tex', 'molssi-math Documentation',
+     'molssi_math.rst', 'manual'),
 ]
 
 
@@ -141,7 +141,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'molssi_math', 'molssi-math Documentation',
+    (master_doc, 'molssi_math.rst', 'molssi-math Documentation',
      [author], 1)
 ]
 
@@ -152,8 +152,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'molssi_math', 'molssi-math Documentation',
-     author, 'molssi_math', 'My first project with cookiecutter',
+    (master_doc, 'molssi_math.rst', 'molssi-math Documentation',
+     author, 'molssi_math.rst', 'My first project with cookiecutter',
      'Miscellaneous'),
 ]
 
