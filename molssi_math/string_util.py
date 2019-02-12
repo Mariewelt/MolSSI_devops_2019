@@ -26,20 +26,15 @@ def title_case(sentence):
  
     Examples
     -------- 
-    >>>> title_case("ThIs iS a STing to be ConverteD")	
+    >>>> title_case("ThIs iS a STring to be ConverteD")
+    >>>> This Is A String To Be Converted.
     """ 
 
     # Check that input is string
     if not isinstance(sentence, str):
-       raise TypeError("Invalid input must be type string.")
-
+        raise TypeError("Invalid input must be type string.")
 
     if len(sentence) == 0:
-       raise IndexError("Connot apply title function to empty string")	
- 
-    t1 = sentence[0].capitalize() 
-    t2 = sentence[0:].lower()
-
-    title = t1+ t2
+        raise ValueError("Cannot apply title function to empty string")
   
-    return title
+    return sentence.title()
