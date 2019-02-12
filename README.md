@@ -7,6 +7,8 @@ molssi-math
 
 My first project with cookiecutter
 
+This project is currently under development.
+
 ### Copyright
 
 Copyright (c) 2019, mariewelt
